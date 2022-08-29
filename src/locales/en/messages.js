@@ -1,0 +1,1 @@
+/*eslint-disable*/module.exports={messages:{"home.learn-react":"Learn React edited","home.signin":"home.signin"}};
