@@ -1,0 +1,29 @@
+.homeBanner {
+    text-align:center; 
+    
+    img {
+        max-width:600px;
+        width:100%;
+        margin:20px auto;
+    }
+}
+
+.homeBloc {
+    margin:80px 40px;
+    
+    span {
+        display:block;
+
+        &.title {
+            font-family: "Mrs Saint Delafield";
+            font-size:42px;
+            line-height:1;
+            text-align:center;
+        }
+    }
+
+    button {
+        margin:40px auto 20px;
+        display:block;
+    }
+}

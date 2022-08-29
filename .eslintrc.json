@@ -9,6 +9,20 @@
         "plugin:@typescript-eslint/recommended"
     ],
     "overrides": [
+        {
+            "files": ["*.tsx", "*.jsx"],
+            "rules": {
+                "@typescript-eslint/ban-types": [
+                    "error",
+                    {
+                        "types": {
+                            "{}": false
+                        },
+                        "extendDefaults": true
+                    }
+                ]
+            }
+        }
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {

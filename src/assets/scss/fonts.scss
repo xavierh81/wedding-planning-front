@@ -65,3 +65,64 @@ $blackFontWeight: 800;
     font-weight: $blackFontWeight;
     src: url('../fonts/Lato/Lato-BlackItalic.ttf') format('truetype');
 }
+
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: $lightFontWeight;
+    src: url('../fonts/cormorant-garamond/CormorantGaramond-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: $lightFontWeight;
+    src: url('../fonts/cormorant-garamond/CormorantGaramond-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: $regularFontWeight;
+    src: url('../fonts/cormorant-garamond/CormorantGaramond-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: $regularFontWeight;
+    src: url('../fonts/cormorant-garamond/CormorantGaramond-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: $boldFontWeight;
+    src: url('../fonts/cormorant-garamond/CormorantGaramond-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: $boldFontWeight;
+    src: url('../fonts/cormorant-garamond/CormorantGaramond-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: $blackFontWeight;
+    src: url('../fonts/cormorant-garamond/CormorantGaramond-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cormorant Garamond';
+    font-style: italic;
+    font-weight: $blackFontWeight;
+    src: url('../fonts/cormorant-garamond/CormorantGaramond-BoldItalic.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Mrs Saint Delafield';
+    font-style: normal;
+    font-weight: $regularFontWeight;
+    src: url('../fonts/mrs-saint-delafield/MrsSaintDelafield-Regular.ttf') format('truetype');
+}

@@ -1,32 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import 'assets/scss/main.style.scss';
 
-import { Button } from 'antd';
-import { Trans } from '@lingui/react';
+import { Route, Routes } from 'react-router-dom';
 
+// Pages 
+import Home from 'pages/Home'
+import PageNotFound from 'pages/errors/PageNotFound';
+
+// Config
+import { SiteRoutes } from 'config/constants';
+
+//
+// Core
+//
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Trans id="home.learn-react" />
-        </a>
+    <div className="app">
+      <Routes>
+        <Route path={SiteRoutes.HOME} element={<Home />} />
 
-
-
-
-        <Button type="primary"> <Trans id="home.signin" /></Button>
-      </header>
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </div>
   );
 }

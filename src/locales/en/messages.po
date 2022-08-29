@@ -13,10 +13,35 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/App.tsx:22
-msgid "home.learn-react"
-msgstr "Learn React edited"
+#: src/pages/Home.tsx:25
+msgid "homepage_details_coming_soon"
+msgstr "Details coming soon!"
 
-#: src/App.tsx:28
-msgid "home.signin"
-msgstr "home.signin"
+#: src/pages/Home.tsx:19
+#~ msgid "homepage_view_title"
+#~ msgstr "homepage_view_title"
+
+#: src/pages/errors/PageNotFound.tsx:37
+msgid "page_not_found_back_to_home"
+msgstr "Go back to homepage"
+
+#: src/pages/errors/PageNotFound.tsx:36
+msgid "page_not_found_bloc_title"
+msgstr "Oops, page not found !"
+
+#: src/pages/errors/PageNotFound.tsx:32
+msgid "page_not_found_title"
+msgstr "Page not found"
+
+#: src/components/layouts/MainLayout.tsx:44
+#: src/components/layouts/MainLayout.tsx:47
+msgid "site_title"
+msgstr "Valentine & Xavier's Wedding Website"
+
+#: src/components/layouts/MainLayout.tsx:108
+msgid "wedding_details_created_by"
+msgstr "Created by ourselves :)"
+
+#: src/components/layouts/MainLayout.tsx:100
+msgid "wedding_detais_days_counter"
+msgstr "{0, plural, =0 {It's today !} one {It's tommorow!} other {# days to go!}}"

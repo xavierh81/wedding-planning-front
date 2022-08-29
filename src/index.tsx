@@ -1,6 +1,8 @@
 // Imports
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from "react-router-dom";
+
 import App from './App';
 
 // Import i18n
@@ -28,6 +30,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <I18nProvider i18n={i18n}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </I18nProvider>
 );
