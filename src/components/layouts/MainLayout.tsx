@@ -2,9 +2,13 @@
 // Imports
 import React, { ReactNode, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router';
-import { Layout} from 'antd';
-const { Header, Footer, Content } = Layout;
 import moment from 'moment';
+
+// AntDesign
+import { Col, Layout, Menu, Row} from 'antd';
+const { Header, Footer, Content } = Layout;
+import { MenuOutlined } from '@ant-design/icons';
+import { MenuInfo } from 'rc-menu/lib/interface';
 
 // Components
 import DecorationBanner from 'components/DecorationBanner';
@@ -25,9 +29,17 @@ type MainLayoutProps = {
   title?: string | null
 }
 
+type MenuItem = {
+  label: string,
+  key: string,
+  path: string
+}
+
 // Define main state type
 type MainLayoutState = {
+    menuItems: MenuItem[],
     currentMenuSelected: string,
+    responsiveMenuDisplayed: boolean,
 }
 
 const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title}) => {
@@ -36,7 +48,7 @@ const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title}
   const location = useLocation();
 
   // Define state variables
-  const [state, setState] = React.useState<MainLayoutState>({ currentMenuSelected: getSelectedMenuKey() });
+  const [state, setState] = React.useState<MainLayoutState>({ menuItems: getMenuItems(), currentMenuSelected: getSelectedMenuKey(), responsiveMenuDisplayed: false});
 
   // Apply page title, if needed
   useEffect(() => {
@@ -49,9 +61,20 @@ const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title}
 
   }, [title]);
 
-  // 
+  // Get menu items
+  function getMenuItems() : MenuItem[] {
+    const menuItems : MenuItem[] = [];
+
+    menuItems.push({label: t`menu_homepage`, key: 'home', path: SiteRoutes.HOME})
+    menuItems.push({label: t`menu_rsvp`, key: 'rsvp', path: SiteRoutes.RSVP_FORM})
+    menuItems.push({label: "Q&A", key: 'test1', path: SiteRoutes.RSVP_FORM})
+    menuItems.push({label: "Guest Accomodations", key: 'test2', path: SiteRoutes.RSVP_FORM})
+    menuItems.push({label: "Things to Do", key: 'test3', path: SiteRoutes.RSVP_FORM})
+
+    return menuItems;
+  }
+
   // Get the selected menu key from Query Path
-  //
   function getSelectedMenuKey() : string {
     switch(location.pathname) {
       case SiteRoutes.HOME:
@@ -69,16 +92,32 @@ const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title}
   // UI Functions
   //
 
+  // Catch menu item click
+  const onMenuItemClick = (info: MenuInfo) => {
+    setState(prevState => ({ ...prevState, responsiveMenuDisplayed: false}));
+
+    const menuItem = state.menuItems.find(i => i.key === info.key);
+    if(menuItem!== undefined && menuItem !== null)
+    {
+      navigate(menuItem.path)
+    }
+  }
+
+  // Display / Hide the responsive menu
+  const switchResponsiveMenuState = () => {
+    setState(prevState => ({ ...prevState, responsiveMenuDisplayed: !state.responsiveMenuDisplayed}))
+  }
+
   //
   // Rendering
   //
 
-  function formatWeddingDate(format = "LL") : string {
-
+  const formatWeddingDate = (format = "LL") : string => {
     return moment(config.weddingSettings.date, "YYYY-MM-DD").format(format);
   }
 
-  function getWeddingDaysCount() : number {
+  // Get the number of days before the wedding
+  const getWeddingDaysCount = () : number => {
     const weddingDate = moment(config.weddingSettings.date, "YYYY-MM-DD")
 
     const isToday = weddingDate.isSame(moment(), 'day');
@@ -93,12 +132,29 @@ const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title}
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Header>
+        <Row id="responsiveMenu">
+          <Col xs={24} md={0}>
+            <button className="menuSwitch" onClick={() => switchResponsiveMenuState()}>
+              <MenuOutlined />
+            </button>
+            <span className="siteTitle">V&X</span>
+            {state.responsiveMenuDisplayed &&
+              <Menu className="mainMenu" selectedKeys={[state.currentMenuSelected]} mode="inline" disabledOverflow={true} items={state.menuItems} onClick={(info) => onMenuItemClick(info)} />
+            }
+          </Col>
+        </Row>
         <DecorationBanner />
         <div className="weddingDetails">
           <h1>Valentine & Xavier</h1>
           <span>{formatWeddingDate()} • {config.weddingSettings.place}</span>
           <span><Plural id="wedding_detais_days_counter" value={getWeddingDaysCount()} /></span>
         </div>
+
+        <Row>
+          <Col sm={0} md={24}>
+            <Menu className="mainMenu" selectedKeys={[state.currentMenuSelected]} mode="horizontal" items={state.menuItems} onClick={(info) => onMenuItemClick(info)} />
+          </Col>
+        </Row>
       </Header>
       <Content>{children}</Content>
       <Footer>

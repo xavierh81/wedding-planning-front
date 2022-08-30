@@ -1,8 +1,10 @@
 // Imports
 import React from 'react';
 import { t } from '@lingui/macro';
-import { Row, Col } from 'antd';
 import { useNavigate } from 'react-router-dom';
+
+// Ant Design
+import { Row, Col } from 'antd';
 
 // Components
 import MainLayout from 'components/layouts/MainLayout';

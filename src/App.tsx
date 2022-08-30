@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 
 // Pages 
 import Home from 'pages/Home'
+import RsvpForm from 'pages/RsvpForm'
 import PageNotFound from 'pages/errors/PageNotFound';
 
 // Config
@@ -18,6 +19,7 @@ function App() {
     <div className="app">
       <Routes>
         <Route path={SiteRoutes.HOME} element={<Home />} />
+        <Route path={SiteRoutes.RSVP_FORM} element={<RsvpForm />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>

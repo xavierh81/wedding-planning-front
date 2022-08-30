@@ -29,13 +29,14 @@ header, footer {
 
 header {
     .weddingDetails {
-        margin:120px auto 10px;
+        margin:120px auto 30px;
         width:600px;
         text-align:center;
 
         h1 {
             font-family: "Mrs Saint Delafield";
             font-size:72px;
+            line-height:75px;
         }
 
         span {
@@ -45,6 +46,77 @@ header {
             display:block;
             margin:12px 0;
         }
+    }
+}
+
+.mainMenu {
+    background-color:transparent !important;
+    border:none;
+    font-size:18px;
+    font-weight:$boldFontWeight;
+    padding:40px 0;
+    text-align:center;
+
+    justify-content:center;
+
+    li:after {
+        bottom:-2px;
+    }
+
+    li.ant-menu-item-selected, li:hover, li:active {
+        color: $mainColor !important;
+        background-color: transparent !important;
+
+        &:after {
+            border-color: $mainColor !important;
+        }
+    }
+}
+
+#responsiveMenu {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color:$mainBackgroundColor;
+    box-shadow: 0 8px 6px -6px rgba(0,0,0,0.2);
+
+    .menuSwitch {
+        margin:10px;
+        height:40px;
+        border:none;
+        background:transparent;
+        cursor:pointer;
+        position:relative;
+        z-index:1;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            .anticon {
+                color:$mainColor;
+            }
+        }
+
+        .anticon {
+            transition: all 0.3s ease-in-out;
+            font-size:28px
+        }
+    }
+
+    span.siteTitle {
+        font-family: "Mrs Saint Delafield";
+        font-size:38px;
+        line-height:38px;
+        position:absolute;
+        z-index:0;
+        top:18px;
+        left:0;
+        right:0;
+        text-align:center;
+    }
+
+    .mainMenu {
+        padding:10px 0 20px;
     }
 }
 
@@ -78,6 +150,17 @@ footer {
             display:block;
             font-size:12px;
         }
+    }
+}
+
+@media (max-width: $mobileResponsiveWidth) {
+    body {
+        padding-top:60px;
+    }
+
+    .weddingDetails {
+        width:100% !important;
+        padding:0 10px;
     }
 }
 

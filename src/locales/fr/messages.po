@@ -21,35 +21,55 @@ msgstr ""
 #~ msgid "home.signin"
 #~ msgstr ""
 
-#: src/pages/Home.tsx:25
-msgid "homepage_details_coming_soon"
+#: src/pages/Home.tsx:32
+#~ msgid "homepage_details_coming_soon"
+#~ msgstr ""
+
+#: src/pages/Home.tsx:42
+msgid "homepage_rsvp_button"
+msgstr ""
+
+#: src/pages/Home.tsx:40
+msgid "homepage_rsvp_desc"
+msgstr ""
+
+#: src/pages/Home.tsx:39
+msgid "homepage_rsvp_title"
 msgstr ""
 
 #: src/pages/Home.tsx:19
 #~ msgid "homepage_view_title"
 #~ msgstr ""
 
-#: src/pages/errors/PageNotFound.tsx:37
+#: src/components/layouts/MainLayout.tsx:68
+msgid "menu_homepage"
+msgstr ""
+
+#: src/components/layouts/MainLayout.tsx:69
+msgid "menu_rsvp"
+msgstr ""
+
+#: src/pages/errors/PageNotFound.tsx:39
 msgid "page_not_found_back_to_home"
 msgstr ""
 
-#: src/pages/errors/PageNotFound.tsx:36
+#: src/pages/errors/PageNotFound.tsx:38
 msgid "page_not_found_bloc_title"
 msgstr ""
 
-#: src/pages/errors/PageNotFound.tsx:32
+#: src/pages/errors/PageNotFound.tsx:34
 msgid "page_not_found_title"
 msgstr ""
 
-#: src/components/layouts/MainLayout.tsx:44
-#: src/components/layouts/MainLayout.tsx:47
+#: src/components/layouts/MainLayout.tsx:56
+#: src/components/layouts/MainLayout.tsx:59
 msgid "site_title"
 msgstr ""
 
-#: src/components/layouts/MainLayout.tsx:108
+#: src/components/layouts/MainLayout.tsx:164
 msgid "wedding_details_created_by"
 msgstr ""
 
-#: src/components/layouts/MainLayout.tsx:100
+#: src/components/layouts/MainLayout.tsx:150
 msgid "wedding_detais_days_counter"
 msgstr ""

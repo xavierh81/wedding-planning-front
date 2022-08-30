@@ -16,7 +16,7 @@ export const DEFAULT_SMALL_GRID = {
     xs: {span: 24, offset: 0},
     sm: {span: 20, offset: 2},
     md: {span: 18, offset: 3},
-    lg: {span: 14, offset: 5},
-    xl: {span:10, offset: 7},
-    xxl: {span: 8, offset: 8}
+    lg: {span: 16, offset: 4},
+    xl: {span:12, offset: 6},
+    xxl: {span: 10, offset: 7}
 }
