@@ -1,9 +1,11 @@
 {
   "name": "wedding-planning-front-test",
   "version": "0.1.0",
+  "homepage": "https://xavierh81.github.io/",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@lingui/detect-locale": "^3.14.0",
     "@lingui/react": "^3.14.0",
     "@lottiefiles/react-lottie-player": "^3.4.7",
     "@testing-library/jest-dom": "^5.16.5",
@@ -31,6 +33,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "eslint": "^8.23.0",
     "eslint-plugin-react": "^7.31.1",
+    "gh-pages": "^4.0.0",
     "react-scripts": "5.0.1"
   },
   "scripts": {
@@ -39,7 +42,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "i18n_extract": "NODE_ENV=development lingui extract",
-    "i18n_compile": "NODE_ENV=development lingui compile"
+    "i18n_compile": "NODE_ENV=development lingui compile",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [

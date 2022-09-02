@@ -19,19 +19,19 @@ msgstr ""
 msgid "coming_soon"
 msgstr "Details coming soon !"
 
-#: src/pages/RsvpForm.tsx:245
+#: src/pages/RsvpForm.tsx:248
 msgid "global_form_field_address_placeholder"
 msgstr "Your address"
 
-#: src/pages/RsvpForm.tsx:173
+#: src/pages/RsvpForm.tsx:176
 msgid "global_form_field_firstname_placeholder"
 msgstr "First name"
 
-#: src/pages/RsvpForm.tsx:177
+#: src/pages/RsvpForm.tsx:180
 msgid "global_form_field_lastname_placeholder"
 msgstr "Last name"
 
-#: src/pages/RsvpForm.tsx:236
+#: src/pages/RsvpForm.tsx:239
 msgid "global_form_field_mail_placeholder"
 msgstr "Your email address"
 
@@ -75,19 +75,6 @@ msgstr "RSVP"
 msgid "menu_things_to_do"
 msgstr "Things to Do"
 
-#: src/components/layouts/MainLayout.tsx:56
-#: src/components/layouts/MainLayout.tsx:59
-msgid "site_title"
-msgstr "Valentine & Xavier's Wedding Website"
-
-#: src/components/layouts/MainLayout.tsx:159
-msgid "wedding_detais_days_counter"
-msgstr "{0, plural, =0 {It's today !} one {It's tommorow!} other {# days to go!}}"
-
-#: src/components/layouts/MainLayout.tsx:173
-msgid "wedding_details_created_by"
-msgstr "Created by ourselves :)"
-
 #: src/pages/errors/PageNotFound.tsx:39
 msgid "page_not_found_back_to_home"
 msgstr "Go back to homepage"
@@ -100,58 +87,71 @@ msgstr "Oops, page not found !"
 msgid "page_not_found_title"
 msgstr "Page not found"
 
-#: src/pages/RsvpForm.tsx:157
-msgid "rsvp_peoples_section_title"
-msgstr "Who's coming from your household?"
-
-#: src/pages/RsvpForm.tsx:158
-msgid "rsvp_peoples_section_desc"
-msgstr "Please note that we would like to organize a wedding without children, except for family, in order to fully enjoy the moment."
-
-#: src/pages/RsvpForm.tsx:166
-msgid "wedding_person_kind_1"
-msgstr "Adult"
-
-#: src/pages/RsvpForm.tsx:167
-msgid "wedding_person_kind_2"
-msgstr "Kid"
-
-#: src/pages/RsvpForm.tsx:168
-msgid "wedding_person_kind_3"
-msgstr "Baby (0-2 years old)"
-
-#: src/pages/RsvpForm.tsx:186
-msgid "rsvp_people_coming_question"
-msgstr "Will this person attend to the wedding ?"
-
-#: src/pages/RsvpForm.tsx:199
-msgid "rsvp_people_special_diet_question"
-msgstr "Do you have a special diet?"
-
-#: src/pages/RsvpForm.tsx:216
-msgid "rsvp_people_special_diet_placeholder"
-msgstr "Vegan, vegetarian, allergies, etc."
-
-#: src/pages/RsvpForm.tsx:226
-msgid "rsvp_peoples_add_button"
-msgstr "Add guest"
-
-#: src/pages/RsvpForm.tsx:230
+#: src/pages/RsvpForm.tsx:233
 msgid "rsvp_contact_info_title"
 msgstr "Contact info"
 
-#: src/pages/RsvpForm.tsx:259
-msgid "rsvp_notes_title"
-msgstr "Any comments?"
-
-#: src/pages/RsvpForm.tsx:275
+#: src/pages/RsvpForm.tsx:278
 msgid "rsvp_form_submit"
 msgstr "Send RSVP"
 
-#: src/pages/RsvpForm.tsx:282
+#: src/pages/RsvpForm.tsx:262
+msgid "rsvp_notes_title"
+msgstr "Any comments?"
+
+#: src/pages/RsvpForm.tsx:189
+msgid "rsvp_people_coming_question"
+msgstr "Will this person attend to the wedding ?"
+
+#: src/pages/RsvpForm.tsx:219
+msgid "rsvp_people_special_diet_placeholder"
+msgstr "Vegan, vegetarian, allergies, etc."
+
+#: src/pages/RsvpForm.tsx:202
+msgid "rsvp_people_special_diet_question"
+msgstr "Do you have a special diet?"
+
+#: src/pages/RsvpForm.tsx:229
+msgid "rsvp_peoples_add_button"
+msgstr "Add guest"
+
+#: src/pages/RsvpForm.tsx:161
+msgid "rsvp_peoples_section_desc"
+msgstr "Please note that we would like to organize a wedding without children, except for family, in order to fully enjoy the moment."
+
+#: src/pages/RsvpForm.tsx:160
+msgid "rsvp_peoples_section_title"
+msgstr "Who's coming from your household?"
+
+#: src/pages/RsvpForm.tsx:292
+msgid "rsvp_request_sent_desc"
+msgstr "We'll contact you later with more information about the wedding."
+
+#: src/pages/RsvpForm.tsx:291
 msgid "rsvp_request_sent_title"
 msgstr "Thanks for your answer !"
 
-#: src/pages/RsvpForm.tsx:283
-msgid "rsvp_request_sent_desc"
-msgstr "We'll contact you later with more information about the wedding."
+#: src/components/layouts/MainLayout.tsx:56
+#: src/components/layouts/MainLayout.tsx:59
+msgid "site_title"
+msgstr "Valentine & Xavier's Wedding Website"
+
+#: src/components/layouts/MainLayout.tsx:173
+msgid "wedding_details_created_by"
+msgstr "Created by ourselves :)"
+
+#: src/components/layouts/MainLayout.tsx:159
+msgid "wedding_detais_days_counter"
+msgstr "{0, plural, =0 {It's today !} one {It's tommorow!} other {# days to go!}}"
+
+#: src/pages/RsvpForm.tsx:169
+msgid "wedding_person_kind_1"
+msgstr "Adult"
+
+#: src/pages/RsvpForm.tsx:170
+msgid "wedding_person_kind_2"
+msgstr "Kid"
+
+#: src/pages/RsvpForm.tsx:171
+msgid "wedding_person_kind_3"
+msgstr "Baby (0-2 years old)"
