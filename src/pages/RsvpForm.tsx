@@ -16,10 +16,13 @@ import YesNoSwitch from 'components/form/YesNoSwitch';
 
 // Helpers
 import { loadConfig } from 'helpers/global';
+import { getEnumKeyByValue } from 'helpers/string';
+
+// API 
+import { createRsvpRequest } from 'services/RsvpService';
 
 // Config
 import { DEFAULT_SMALL_GRID, WeddingPersonKind } from 'config/constants';
-import { createRsvpRequest } from 'services/RsvpService';
 
 const config = loadConfig();
 
@@ -29,7 +32,7 @@ const config = loadConfig();
 
 // Define person type
 type Person = {
-    kind: number,
+    kind: string | undefined,
     firstname: string,
     lastname: string,
     coming: boolean,
@@ -120,7 +123,7 @@ function RsvpForm() {
 
                 state.peopleIndexes.forEach((personIndex) => {
                     postData.people.push({
-                        kind: values[`person_${personIndex}_kind`] >= 1 ? values[`person_${personIndex}_kind`] : WeddingPersonKind.ADULT,
+                        kind: values[`person_${personIndex}_kind`] >= 1 ? getEnumKeyByValue(WeddingPersonKind, values[`person_${personIndex}_kind`]) : getEnumKeyByValue(WeddingPersonKind, WeddingPersonKind.ADULT),
                         firstname: values[`person_${personIndex}_firstname`],
                         lastname: values[`person_${personIndex}_lastname`],
                         coming: values[`person_${personIndex}_coming`],
