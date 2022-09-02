@@ -96,7 +96,7 @@ msgstr "Où aura lieu le mariage?"
 
 #: src/pages/QuestionsAnswers.tsx:38
 msgid "qa_entry_2_answer"
-msgstr "Nous vous recommendons d'arriver au moins 30 minutes avant la cérémonie."
+msgstr "Nous vous recommandons d'arriver au moins 30 minutes avant la cérémonie."
 
 #: src/pages/QuestionsAnswers.tsx:37
 msgid "qa_entry_2_question"
