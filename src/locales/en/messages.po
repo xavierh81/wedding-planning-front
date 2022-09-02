@@ -96,7 +96,7 @@ msgstr "Where is the wedding taking place?"
 
 #: src/pages/QuestionsAnswers.tsx:38
 msgid "qa_entry_2_answer"
-msgstr "We recommend that you arrive 30 minutes before the ceremony to make sure everyone is on time and we can get the ceremony started as scheduled!"
+msgstr "We recommend that you arrive 30 minutes before the ceremony."
 
 #: src/pages/QuestionsAnswers.tsx:37
 msgid "qa_entry_2_question"

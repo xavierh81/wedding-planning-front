@@ -16,7 +16,7 @@ msgstr ""
 #: src/pages/GuestAccomodations.tsx:26
 #: src/pages/ThingsToDo.tsx:26
 msgid "coming_soon"
-msgstr "Détails bientôt disponible !"
+msgstr "Détails bientôt disponibles !"
 
 #: src/pages/RsvpForm.tsx:248
 msgid "global_form_field_address_placeholder"
@@ -48,7 +48,7 @@ msgstr "Répondre à l'invitation"
 
 #: src/pages/Home.tsx:40
 msgid "homepage_rsvp_desc"
-msgstr "Merci de confirmer votre présence (ou non) en cliquant sur le boutton ci-dessous."
+msgstr "Merci de confirmer votre présence (ou non) en cliquant sur le bouton ci-dessous."
 
 #: src/pages/Home.tsx:39
 msgid "homepage_rsvp_title"
@@ -92,11 +92,11 @@ msgstr "Au Château de Mauriac, 81600 Senouillac, France."
 
 #: src/pages/QuestionsAnswers.tsx:33
 msgid "qa_entry_1_question"
-msgstr "Où-est-ce que le mariage aura lieu?"
+msgstr "Où aura lieu le mariage?"
 
 #: src/pages/QuestionsAnswers.tsx:38
 msgid "qa_entry_2_answer"
-msgstr "Nous vous recommendons d'arriver au moins 30 minutes avant la cérémonie afin d'être sûr que tout le monde soit à l'heure et de commencer celle-ci à l'heure prévue."
+msgstr "Nous vous recommendons d'arriver au moins 30 minutes avant la cérémonie."
 
 #: src/pages/QuestionsAnswers.tsx:37
 msgid "qa_entry_2_question"
@@ -180,7 +180,7 @@ msgstr "Indiquez les membres de votre famille"
 
 #: src/pages/RsvpForm.tsx:292
 msgid "rsvp_request_sent_desc"
-msgstr "Nous vous contacterons prochainement avec de plus amples informations sur le mariage."
+msgstr "Nous vous contacterons prochainement avec de nouvelles informations sur notre mariage."
 
 #: src/pages/RsvpForm.tsx:291
 msgid "rsvp_request_sent_title"
