@@ -13,6 +13,36 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/pages/GuestAccomodations.tsx:26
+#: src/pages/QuestionsAnswers.tsx:26
+#: src/pages/ThingsToDo.tsx:26
+msgid "coming_soon"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:245
+msgid "global_form_field_address_placeholder"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:173
+msgid "global_form_field_firstname_placeholder"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:177
+msgid "global_form_field_lastname_placeholder"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:236
+msgid "global_form_field_mail_placeholder"
+msgstr ""
+
+#: src/components/form/YesNoSwitch.tsx:31
+msgid "global_no"
+msgstr ""
+
+#: src/components/form/YesNoSwitch.tsx:30
+msgid "global_yes"
+msgstr ""
+
 #: src/App.tsx:22
 #~ msgid "home.learn-react"
 #~ msgstr ""
@@ -41,12 +71,24 @@ msgstr ""
 #~ msgid "homepage_view_title"
 #~ msgstr ""
 
+#: src/components/layouts/MainLayout.tsx:71
+msgid "menu_guest_accomodations"
+msgstr ""
+
 #: src/components/layouts/MainLayout.tsx:68
 msgid "menu_homepage"
 msgstr ""
 
+#: src/components/layouts/MainLayout.tsx:70
+msgid "menu_questions_answers"
+msgstr ""
+
 #: src/components/layouts/MainLayout.tsx:69
 msgid "menu_rsvp"
+msgstr ""
+
+#: src/components/layouts/MainLayout.tsx:72
+msgid "menu_things_to_do"
 msgstr ""
 
 #: src/pages/errors/PageNotFound.tsx:39
@@ -61,15 +103,79 @@ msgstr ""
 msgid "page_not_found_title"
 msgstr ""
 
+#: src/pages/RsvpForm.tsx:230
+msgid "rsvp_contact_info_title"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:275
+msgid "rsvp_form_submit"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:259
+msgid "rsvp_notes_title"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:133
+#~ msgid "rsvp_people_coming"
+#~ msgstr ""
+
+#: src/pages/RsvpForm.tsx:186
+msgid "rsvp_people_coming_question"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:134
+#~ msgid "rsvp_people_not_coming"
+#~ msgstr ""
+
+#: src/pages/RsvpForm.tsx:216
+msgid "rsvp_people_special_diet_placeholder"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:199
+msgid "rsvp_people_special_diet_question"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:226
+msgid "rsvp_peoples_add_button"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:158
+msgid "rsvp_peoples_section_desc"
+msgstr "Nous souhaitons faire un mariage sans enfant, hormis pour la famille, afin que chacun puisse profiter à 200% de ce moment."
+
+#: src/pages/RsvpForm.tsx:157
+msgid "rsvp_peoples_section_title"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:283
+msgid "rsvp_request_sent_desc"
+msgstr ""
+
+#: src/pages/RsvpForm.tsx:282
+msgid "rsvp_request_sent_title"
+msgstr ""
+
 #: src/components/layouts/MainLayout.tsx:56
 #: src/components/layouts/MainLayout.tsx:59
 msgid "site_title"
 msgstr ""
 
-#: src/components/layouts/MainLayout.tsx:164
+#: src/components/layouts/MainLayout.tsx:173
 msgid "wedding_details_created_by"
 msgstr ""
 
-#: src/components/layouts/MainLayout.tsx:150
+#: src/components/layouts/MainLayout.tsx:159
 msgid "wedding_detais_days_counter"
 msgstr ""
+
+#: src/pages/RsvpForm.tsx:166
+msgid "wedding_person_kind_1"
+msgstr "Adult"
+
+#: src/pages/RsvpForm.tsx:167
+msgid "wedding_person_kind_2"
+msgstr "Kid"
+
+#: src/pages/RsvpForm.tsx:168
+msgid "wedding_person_kind_3"
+msgstr "Baby"

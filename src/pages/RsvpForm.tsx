@@ -2,10 +2,12 @@
 import React from 'react';
 import { t } from '@lingui/macro';
 import Autocomplete from "react-google-autocomplete";
+import { Player } from '@lottiefiles/react-lottie-player';
+
 
 // Ant Design
 import { Row, Col, Form, Input, Select } from 'antd';
-import { CheckCircleOutlined, CloseCircleOutlined, DeleteOutlined, PlusCircleOutlined } from '@ant-design/icons';
+import { DeleteOutlined, PlusCircleOutlined } from '@ant-design/icons';
 
 // Components
 import MainLayout from 'components/layouts/MainLayout';
@@ -36,18 +38,20 @@ type Person = {
 }
 
 // Define main state type
-type LoginState = {
+type RsvpFormState = {
     peopleIndexes: number[],
     address: string,
 
     formProcessing: boolean,
-    formError: string | null
+    formError: string | null,
+
+    formSuccess: boolean
 }
 
 // Main element
 function RsvpForm() {
     // Define state variables
-    const [state, setState] = React.useState<LoginState>({ peopleIndexes: [1], address: '', formProcessing: false, formError: null });
+    const [state, setState] = React.useState<RsvpFormState>({ peopleIndexes: [1], address: '', formProcessing: false, formError: null, formSuccess: false });
     
     // Define form variable
     const [form] = Form.useForm();
@@ -126,7 +130,8 @@ function RsvpForm() {
                 })
 
                 createRsvpRequest(postData).then(() => {
-                    alert("Success")
+                    setState(prevState => ({ ...prevState, formSuccess: true}))
+                    document.documentElement.scrollTo(0, 0);
                 })
                 .catch((error) => {
                     setState(prevState => ({ ...prevState, formProcessing: false, formError: error }))
@@ -144,134 +149,156 @@ function RsvpForm() {
         <MainLayout>
             <Row className="mainFormTheme">
                 <Col {...DEFAULT_SMALL_GRID}>
-                    <Form
-                        name="rsvp"
-                        form={form}
-                        className="formContent"
-                        onFinish={onFormSubmit}
-                    >
-                        <div className="formSection">
-                            <span className="title">{t`rsvp_peoples_section_title`}</span>
-                            <span className="desc">{t`rsvp_peoples_section_desc`}</span>
+                    {state.formSuccess === false && 
+                        <Form
+                            name="rsvp"
+                            form={form}
+                            className="formContent"
+                            onFinish={onFormSubmit}
+                        >
+                            <div className="formSection">
+                                <span className="title">{t`rsvp_peoples_section_title`}</span>
+                                <span className="desc">{t`rsvp_peoples_section_desc`}</span>
 
-                            {state.peopleIndexes.map((personIndex, index) => {
-                                return (
-                                    <div key={`person_${personIndex}`} className="personFormDetails">
-                                        <div key={`person_${personIndex}_info`} className="inlineFormItems">
-                                            <Form.Item name={`person_${personIndex}_kind`} className="small">
-                                                <Select defaultValue={WeddingPersonKind.ADULT} value={WeddingPersonKind.ADULT}>
-                                                    <Select.Option key={`person_kind_${WeddingPersonKind.ADULT}`} value={WeddingPersonKind.ADULT}>{t`wedding_person_kind_1`}</Select.Option>
-                                                    <Select.Option key={`person_kind_${WeddingPersonKind.KID}`} value={WeddingPersonKind.KID}>{t`wedding_person_kind_2`}</Select.Option>
-                                                    <Select.Option key={`person_kind_${WeddingPersonKind.BABY}`} value={WeddingPersonKind.BABY}>{t`wedding_person_kind_3`}</Select.Option>
-                                                </Select>
-                                            </Form.Item>
+                                {state.peopleIndexes.map((personIndex, index) => {
+                                    return (
+                                        <div key={`person_${personIndex}`} className="personFormDetails">
+                                            <div key={`person_${personIndex}_info`} className="inlineFormItems">
+                                                <Form.Item name={`person_${personIndex}_kind`} className="small">
+                                                    <Select defaultValue={WeddingPersonKind.ADULT} value={WeddingPersonKind.ADULT}>
+                                                        <Select.Option key={`person_kind_${WeddingPersonKind.ADULT}`} value={WeddingPersonKind.ADULT}>{t`wedding_person_kind_1`}</Select.Option>
+                                                        <Select.Option key={`person_kind_${WeddingPersonKind.KID}`} value={WeddingPersonKind.KID}>{t`wedding_person_kind_2`}</Select.Option>
+                                                        <Select.Option key={`person_kind_${WeddingPersonKind.BABY}`} value={WeddingPersonKind.BABY}>{t`wedding_person_kind_3`}</Select.Option>
+                                                    </Select>
+                                                </Form.Item>
 
-                                            <Form.Item name={`person_${personIndex}_firstname`} rules={[{ required: true, message: '' }]}>
-                                                <Input placeholder={t`global_form_field_firstname_placeholder`} />
-                                            </Form.Item>
+                                                <Form.Item name={`person_${personIndex}_firstname`} rules={[{ required: true, message: '' }]}>
+                                                    <Input placeholder={t`global_form_field_firstname_placeholder`} />
+                                                </Form.Item>
 
-                                            <Form.Item name={`person_${personIndex}_lastname`} rules={[{ required: true, message: '' }]}>
-                                                <Input placeholder={t`global_form_field_lastname_placeholder`}  />
-                                            </Form.Item>
+                                                <Form.Item name={`person_${personIndex}_lastname`} rules={[{ required: true, message: '' }]}>
+                                                    <Input placeholder={t`global_form_field_lastname_placeholder`}  />
+                                                </Form.Item>
 
-                                            <button type="button" className="removeFormRow" onClick={() => removePerson(index, personIndex)}>
-                                                <DeleteOutlined />
-                                            </button>
-                                        </div>
+                                                <button type="button" className="removeFormRow" onClick={() => removePerson(index, personIndex)}>
+                                                    <DeleteOutlined />
+                                                </button>
+                                            </div>
 
-                                        <div key={`person_${personIndex}_availability`} className="inlineFormItems">
-                                            <span>{t`rsvp_people_coming_question`}</span>
-                                            <Form.Item name={`person_${personIndex}_coming`} rules={[{ required: true, message: '' }]}>
-                                                <YesNoSwitch />
-                                            </Form.Item>
-                                        </div>
+                                            <div key={`person_${personIndex}_availability`} className="inlineFormItems columnResponsive">
+                                                <span>{t`rsvp_people_coming_question`}</span>
+                                                <Form.Item name={`person_${personIndex}_coming`} rules={[{ required: true, message: '' }]}>
+                                                    <YesNoSwitch />
+                                                </Form.Item>
+                                            </div>
 
-                                        <Form.Item
-                                            noStyle
-                                            shouldUpdate={(prevValues, currentValues) => prevValues[`person_${personIndex}_coming`] !== currentValues[`person_${personIndex}_coming`]}
-                                        >
-                                            {({ getFieldValue }) =>
-                                                getFieldValue(`person_${personIndex}_coming`) === true ? (
-                                                    <div key={`person_${index}_diet`} className="inlineFormItems">
-                                                        <span>{t`rsvp_people_special_diet_question`}</span>
-                                                        <Form.Item name={`person_${personIndex}_special_diet`} rules={[{ required: true, message: '' }]}>
-                                                            <YesNoSwitch />
-                                                        </Form.Item>
-                                                    </div>
-                                                ) : null
-                                            }
-                                        </Form.Item>
-
-                                        <Form.Item
-                                            noStyle
-                                            shouldUpdate={(prevValues, currentValues) => prevValues[`person_${personIndex}_coming`] !== currentValues[`person_${personIndex}_coming`] || prevValues[`person_${personIndex}_special_diet`] !== currentValues[`person_${personIndex}_special_diet`]}
-                                        >
-                                            {({ getFieldValue }) =>
-                                                getFieldValue(`person_${personIndex}_coming`) === true && getFieldValue(`person_${personIndex}_special_diet`) === true ? (
-                                                    <div key={`person_${personIndex}_diet_note`} className="inlineFormItems">
-                                                        <Form.Item name={`person_${personIndex}_special_diet_note`} rules={[{ required: true, message: '' }]}>
-                                                            <Input placeholder={t`rsvp_people_special_diet_placeholder`} />
-                                                        </Form.Item>
-                                                    </div>
-                                                ) : null
-                                            }
-                                        </Form.Item>
-                                    </div>
-                                )
-                            })}
-
-                            <button type="button" className="actionButton" style={{marginTop:20, marginBottom:20}} onClick={() => addNewPerson()}><PlusCircleOutlined /> {t`rsvp_peoples_add_button`}</button>
-                        </div>
-
-                        <div className="formSection">
-                            <span className="title">{t`rsvp_contact_info_title`}</span>
-
-                            <Row>
-                                <Col sm={24} md={{span:16, offset:4}}>
-                                    <div className="inlineFormItems">
-                                        <Form.Item name={`contact_mail`} rules={[{ required: true, type:"email", message: '' }]}>
-                                            <Input placeholder={t`global_form_field_mail_placeholder`} />
-                                        </Form.Item>
-                                    </div>
-                                    <div className="inlineFormItems">
-                                        <Autocomplete
-                                            apiKey={config.googleMapsApiKey}
-                                            options={{
-                                                types: ["address"],
-                                            }}
-                                            placeholder={t`global_form_field_address_placeholder`}
-
-                                            onPlaceSelected={(place) => {
-                                                if(place) {
-                                                    setState(prevState => ({ ...prevState, address: place.formatted_address}));
+                                            <Form.Item
+                                                noStyle
+                                                shouldUpdate={(prevValues, currentValues) => prevValues[`person_${personIndex}_coming`] !== currentValues[`person_${personIndex}_coming`]}
+                                            >
+                                                {({ getFieldValue }) =>
+                                                    getFieldValue(`person_${personIndex}_coming`) === true ? (
+                                                        <div key={`person_${index}_diet`} className="inlineFormItems columnResponsive">
+                                                            <span>{t`rsvp_people_special_diet_question`}</span>
+                                                            <Form.Item name={`person_${personIndex}_special_diet`} rules={[{ required: true, message: '' }]}>
+                                                                <YesNoSwitch />
+                                                            </Form.Item>
+                                                        </div>
+                                                    ) : null
                                                 }
-                                            }}
-                                        />
-                                    </div>
-                                </Col>
-                            </Row>
-                        </div>
+                                            </Form.Item>
 
-                        <div className="formSection">
-                            <span className="title">{t`rsvp_notes_title`}</span>
+                                            <Form.Item
+                                                noStyle
+                                                shouldUpdate={(prevValues, currentValues) => prevValues[`person_${personIndex}_coming`] !== currentValues[`person_${personIndex}_coming`] || prevValues[`person_${personIndex}_special_diet`] !== currentValues[`person_${personIndex}_special_diet`]}
+                                            >
+                                                {({ getFieldValue }) =>
+                                                    getFieldValue(`person_${personIndex}_coming`) === true && getFieldValue(`person_${personIndex}_special_diet`) === true ? (
+                                                        <div key={`person_${personIndex}_diet_note`} className="inlineFormItems">
+                                                            <Form.Item name={`person_${personIndex}_special_diet_note`} rules={[{ required: true, message: '' }]}>
+                                                                <Input placeholder={t`rsvp_people_special_diet_placeholder`} />
+                                                            </Form.Item>
+                                                        </div>
+                                                    ) : null
+                                                }
+                                            </Form.Item>
+                                        </div>
+                                    )
+                                })}
 
-                            <Row>
-                                <Col sm={24} md={{span:16, offset:4}}>
-                                    <div className="inlineFormItems">
-                                        <Form.Item name={`notes`}>
-                                            <Input.TextArea rows={3} />
-                                        </Form.Item>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </div>
+                                <button type="button" className="actionButton" style={{marginTop:20, marginBottom:20}} onClick={() => addNewPerson()}><PlusCircleOutlined /> {t`rsvp_peoples_add_button`}</button>
+                            </div>
 
-                        {state.formError != null && <span className="formError">{state.formError}</span>}
-                        
-                        <div className="formActions">
-                            <RoundedButton className={`submitButton`} enabled={!state.formProcessing} loading={state.formProcessing} onClick={() => onPressSubmit()} text={t`rsvp_form_submit`} />
+                            <div className="formSection">
+                                <span className="title">{t`rsvp_contact_info_title`}</span>
+
+                                <Row>
+                                    <Col xs={24} md={{span:16, offset:4}}>
+                                        <div className="inlineFormItems">
+                                            <Form.Item name={`contact_mail`} rules={[{ required: true, type:"email", message: '' }]}>
+                                                <Input placeholder={t`global_form_field_mail_placeholder`} />
+                                            </Form.Item>
+                                        </div>
+                                        <div className="inlineFormItems">
+                                            <Autocomplete
+                                                apiKey={config.googleMapsApiKey}
+                                                options={{
+                                                    types: ["address"],
+                                                }}
+                                                placeholder={t`global_form_field_address_placeholder`}
+
+                                                onPlaceSelected={(place) => {
+                                                    if(place) {
+                                                        setState(prevState => ({ ...prevState, address: place.formatted_address}));
+                                                    }
+                                                }}
+                                            />
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+
+                            <div className="formSection">
+                                <span className="title">{t`rsvp_notes_title`}</span>
+
+                                <Row>
+                                    <Col xs={24} md={{span:16, offset:4}}>
+                                        <div className="inlineFormItems">
+                                            <Form.Item name={`notes`}>
+                                                <Input.TextArea rows={3} />
+                                            </Form.Item>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+
+                            {state.formError != null && <span className="formError">{state.formError}</span>}
+                            
+                            <div className="formActions">
+                                <RoundedButton className={`submitButton`} enabled={!state.formProcessing} loading={state.formProcessing} onClick={() => onPressSubmit()} text={t`rsvp_form_submit`} />
+                            </div>
+                        </Form>
+                    }
+
+                    {state.formSuccess === true && 
+                        <div className="formSection" style={{marginTop:-50}}>
+                            <Player
+                                autoplay
+                                loop
+                                src="https://assets6.lottiefiles.com/packages/lf20_jbrw3hcz.json"
+                                style={{ height: '200px', width: '400px' }}
+                            />
+                            <span className="title">{t`rsvp_request_sent_title`}</span>
+                            <span className="desc">{t`rsvp_request_sent_desc`}</span>
+
+                            <Player
+                                autoplay
+                                loop
+                                src="https://assets4.lottiefiles.com/packages/lf20_m3lpL4.json"
+                                style={{ height: '200px', width: '400px', marginTop:70 }}
+                            />
                         </div>
-                    </Form>
+                    } 
                 </Col>
             </Row>
         </MainLayout>

@@ -36,7 +36,7 @@ function PageNotFound() {
                 <Col {...DEFAULT_SMALL_GRID}>
                     <div className="homeBloc">
                         <span className="title">{t`page_not_found_bloc_title`}</span>
-                        <RoundedButton text={t`page_not_found_back_to_home`} onClick={GoBackToHome()} />
+                        <RoundedButton text={t`page_not_found_back_to_home`} onClick={() => GoBackToHome()} />
                     </div>
                 </Col>
             </Row>

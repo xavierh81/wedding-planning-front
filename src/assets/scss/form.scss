@@ -1,0 +1,171 @@
+.mainFormTheme {
+    padding:0 5px; 
+
+    .formSection {
+        margin-top:20px;
+        font-size:$defaultFontSize;
+        text-align:center;
+
+        padding-bottom:20px;
+
+        span {
+            display:block;
+
+            &.title {
+                text-align:center;
+                font-size:34px;
+                margin-bottom:20px;
+            }
+
+            &.desc {
+                text-align:center;
+                margin-bottom:20px;
+            }
+        }
+
+        .inlineFormItems {
+            display:flex;
+            flex-direction:row;
+            margin-bottom:18px;
+
+            .ant-form-item {
+                flex:1;
+                margin-right:15px;
+                margin-bottom:0;
+
+                &.small {
+                    flex-grow:0;
+                }
+
+                &:nth-last-child(2) {
+                    margin-right:5px;
+                }
+
+                &:last-child {
+                    margin-right:0;
+                }
+
+                input {
+                    padding-top:6px;
+                    padding-bottom:6px;
+                }
+
+                .ant-select-selector {
+                    height:36px;
+
+                    .ant-select-selection-item {
+                        line-height:34px;
+                    }
+                }
+            }
+
+            .removeFormRow {
+                background:none;
+                border:none;
+                line-height:20px;
+                align-self:start;
+                margin-top:6px;
+                transition: all 0.3s ease-in-out;
+                font-size:16px;
+
+                cursor:pointer; 
+
+                &:hover {
+                    color: $mainColor;
+                }
+            }
+
+            .actionButton {
+                flex-grow:0;
+                margin: 0 0 5px 25px;
+                border:1px solid $mainFontColor;
+                color:$mainFontColor;
+                border-radius:3px;
+                opacity:0.5;
+
+                &:hover {
+                    opacity:1;
+                    border-color:$mainColor;
+                    color:$mainColor;
+                }
+
+                &.active {
+                    background-color: darken($mainColor, $defaultHoverDarkenRatio);
+                    color:#FFF;
+                    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+                    border-color: darken($mainColor, $defaultHoverDarkenRatio);
+                    opacity:1;
+                }
+
+                &.redActive.active {
+                    border-color: darken($redColor, $defaultHoverDarkenRatio);
+                    background-color: darken($redColor, $defaultHoverDarkenRatio);
+                }
+            }
+
+            .pac-target-input {
+                display:block;
+                flex:1;
+                border:1px solid #d9d9d9;
+                border-radius:2px;
+                font-size: 14px;
+                line-height: 1.5715;
+                padding:6px 11px;
+                outline:none;
+
+                &:focus {
+                    border-color: #40a9ff;
+                    box-shadow: 0 0 0 2px rgb(24 144 255 / 20%);
+                }
+            }
+        }
+
+        .actionButton {
+            background:none;
+            border:none;
+            font-size:18px;
+            cursor:pointer;
+            transition: all 0.3s ease-in-out;
+            margin:0 auto;
+            color: darken($mainColor, $defaultHoverDarkenRatio);
+            font-weight:$blackFontWeight;
+
+            &:hover {
+                opacity:0.5;
+            }
+
+            span {
+                display:inline-block;
+            }
+
+            .anticon {
+                font-size:14px;
+                margin-right:3px;
+            }
+        }
+    }
+
+    .formActions {
+        margin-top:20px;
+        text-align:center;
+    }
+}
+
+.personFormDetails {
+    padding-bottom:20px;
+
+    padding-top:24px;
+    border-bottom:1px solid $lightBorderColor;
+}
+
+@media (max-width: $mobileResponsiveWidth) {
+    .inlineFormItems {
+        &.columnResponsive {
+            flex-direction: column !important;
+
+            .ant-form-item {
+                margin-top:10px;
+            }
+        }   
+    }
+}

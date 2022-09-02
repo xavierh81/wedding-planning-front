@@ -39,7 +39,7 @@ function Home() {
                         <span className="title">{t`homepage_rsvp_title`}</span>
                         <span className="desc">{t`homepage_rsvp_desc`}</span>
 
-                        <RoundedButton text={t`homepage_rsvp_button`} onClick={navigate(SiteRoutes.RSVP_FORM)} />
+                        <RoundedButton text={t`homepage_rsvp_button`} onClick={() => navigate(SiteRoutes.RSVP_FORM)} />
                     </div>
                 </Col>
             </Row>

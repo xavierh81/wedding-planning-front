@@ -6,7 +6,7 @@ import { LoadingOutlined } from '@ant-design/icons';
 // Define props type
 type RoundedButtonProps = {
     text: string,
-    onClick: void
+    onClick: () => void,
     enabled?: boolean,
     loading?: boolean,
     className?: string
@@ -26,7 +26,7 @@ export class RoundedButton extends Component<RoundedButtonProps, {}> {
         const {text, enabled, loading, className, onClick} = this.props;
 
         return (
-            <button className={`roundedButton ${!enabled ? "disabled " : ""}${!enabled ? "loading " : ""} ${className}`} onClick={() => onClick}>
+            <button type="button" className={`roundedButton ${!enabled ? "disabled " : ""}${!enabled ? "loading " : ""} ${className}`} onClick={() => onClick()} disabled={!enabled}>
                 {loading && <Spin indicator={<LoadingOutlined style={{ fontSize: 24, color: "#FFF" }} spin />} />}
                 <span className="label">{text}</span>
             </button>

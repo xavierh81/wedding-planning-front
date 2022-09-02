@@ -1,6 +1,9 @@
 export const SiteRoutes = {
     HOME: "/",
-    RSVP_FORM: "/rsvp"
+    RSVP_FORM: "/rsvp",
+    QA: "/q-a",
+    GUEST_ACCOMODATIONS: "/guest-accomodations",
+    THINGS_TO_DO: "/things-to-do"
 }
 
 export const DEFAULT_GRID = {
@@ -19,4 +22,10 @@ export const DEFAULT_SMALL_GRID = {
     lg: {span: 16, offset: 4},
     xl: {span:12, offset: 6},
     xxl: {span: 10, offset: 7}
+}
+
+export enum WeddingPersonKind {
+    ADULT = 1,
+    KID = 2,
+    BABY = 3
 }
