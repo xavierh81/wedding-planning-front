@@ -112,11 +112,11 @@ msgstr "Quelle est la date limite de réponse?"
 
 #: src/pages/QuestionsAnswers.tsx:46
 msgid "qa_entry_4_answer"
-msgstr "The dress code for our wedding is formal attire. Example: suits and dresses."
+msgstr "Mettez vous sur votre 31, tout en étant à l'aise."
 
 #: src/pages/QuestionsAnswers.tsx:45
 msgid "qa_entry_4_question"
-msgstr "Est-ce qu'il y a un code vestimentaire"
+msgstr "Y a-t-il y a un code vestimentaire?"
 
 #: src/pages/QuestionsAnswers.tsx:50
 msgid "qa_entry_5_answer"
