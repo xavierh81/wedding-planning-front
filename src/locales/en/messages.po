@@ -14,7 +14,6 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/pages/GuestAccomodations.tsx:26
-#: src/pages/QuestionsAnswers.tsx:26
 #: src/pages/ThingsToDo.tsx:26
 msgid "coming_soon"
 msgstr "Details coming soon !"
@@ -53,7 +52,7 @@ msgstr "Please confirm your presence (or not) by clicking on the button below."
 
 #: src/pages/Home.tsx:39
 msgid "homepage_rsvp_title"
-msgstr "Are you coming ?"
+msgstr "Are you coming?"
 
 #: src/components/layouts/MainLayout.tsx:71
 msgid "menu_guest_accomodations"
@@ -87,6 +86,62 @@ msgstr "Oops, page not found !"
 msgid "page_not_found_title"
 msgstr "Page not found"
 
+#: src/pages/QuestionsAnswers.tsx:34
+msgid "qa_entry_1_answer"
+msgstr "At the « Château de Mauriac », 81600 Senouillac, France."
+
+#: src/pages/QuestionsAnswers.tsx:33
+msgid "qa_entry_1_question"
+msgstr "Where is the wedding taking place?"
+
+#: src/pages/QuestionsAnswers.tsx:38
+msgid "qa_entry_2_answer"
+msgstr "We recommend that you arrive 30 minutes before the ceremony to make sure everyone is on time and we can get the ceremony started as scheduled!"
+
+#: src/pages/QuestionsAnswers.tsx:37
+msgid "qa_entry_2_question"
+msgstr "What time should I arrive?"
+
+#: src/pages/QuestionsAnswers.tsx:42
+msgid "qa_entry_3_answer"
+msgstr "{date}"
+
+#: src/pages/QuestionsAnswers.tsx:41
+msgid "qa_entry_3_question"
+msgstr "When is the RSVP deadline?"
+
+#: src/pages/QuestionsAnswers.tsx:46
+msgid "qa_entry_4_answer"
+msgstr "The dress code for our wedding is formal attire. Example: suits and dresses."
+
+#: src/pages/QuestionsAnswers.tsx:45
+msgid "qa_entry_4_question"
+msgstr "Is there a dress code?"
+
+#: src/pages/QuestionsAnswers.tsx:50
+msgid "qa_entry_5_answer"
+msgstr "Reception will be held outdoors, in the castle's courtyard."
+
+#: src/pages/QuestionsAnswers.tsx:49
+msgid "qa_entry_5_question"
+msgstr "Will the wedding be indoors or outdoors?"
+
+#: src/pages/QuestionsAnswers.tsx:54
+msgid "qa_entry_6_answer"
+msgstr "Yes!"
+
+#: src/pages/QuestionsAnswers.tsx:53
+msgid "qa_entry_6_question"
+msgstr "Will there be an open bar?"
+
+#: src/pages/QuestionsAnswers.tsx:58
+msgid "qa_entry_7_answer"
+msgstr "Toulouse–Blagnac Airport (TLS)"
+
+#: src/pages/QuestionsAnswers.tsx:57
+msgid "qa_entry_7_question"
+msgstr "What airport do I fly into?"
+
 #: src/pages/RsvpForm.tsx:233
 msgid "rsvp_contact_info_title"
 msgstr "Contact info"
@@ -101,7 +156,7 @@ msgstr "Any comments?"
 
 #: src/pages/RsvpForm.tsx:189
 msgid "rsvp_people_coming_question"
-msgstr "Will this person attend to the wedding ?"
+msgstr "Will this person attend to the wedding?"
 
 #: src/pages/RsvpForm.tsx:219
 msgid "rsvp_people_special_diet_placeholder"
