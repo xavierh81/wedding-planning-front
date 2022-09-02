@@ -3,7 +3,7 @@ export const SiteRoutes = {
     RSVP_FORM: "/rsvp",
     QA: "/q-a",
     GUEST_ACCOMODATIONS: "/guest-accomodations",
-    THINGS_TO_DO: "/things-to-do"
+    THINGS_TO_DO: "/turism"
 }
 
 export const DEFAULT_GRID = {
