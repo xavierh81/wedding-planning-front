@@ -48,7 +48,7 @@ msgstr "Répondre à l'invitation"
 
 #: src/pages/Home.tsx:40
 msgid "homepage_rsvp_desc"
-msgstr "Merci de confirmer votre présence (ou non) en cliquant sur le bouton ci-dessous."
+msgstr "Merci de confirmer votre présence (ou non) en cliquant sur le bouton ci-dessous:"
 
 #: src/pages/Home.tsx:39
 msgid "homepage_rsvp_title"
@@ -72,7 +72,7 @@ msgstr "RSVP"
 
 #: src/components/layouts/MainLayout.tsx:72
 msgid "menu_things_to_do"
-msgstr "Choses à faire"
+msgstr "Tourisme"
 
 #: src/pages/errors/PageNotFound.tsx:39
 msgid "page_not_found_back_to_home"
@@ -124,7 +124,7 @@ msgstr "La réception aura lieu à l'extérieur, dans la cour du château."
 
 #: src/pages/QuestionsAnswers.tsx:49
 msgid "qa_entry_5_question"
-msgstr "Est-ce que le mariage se déroulera en intérieur ou extérieur?"
+msgstr "Est-ce que le mariage se déroulera en intérieur ou en extérieur?"
 
 #: src/pages/QuestionsAnswers.tsx:54
 msgid "qa_entry_6_answer"
@@ -172,7 +172,7 @@ msgstr "Ajouter une personne"
 
 #: src/pages/RsvpForm.tsx:161
 msgid "rsvp_peoples_section_desc"
-msgstr "Merci de noter que nous souhaiterions organiser un mariage sans enfant, hormis pour la famille, afin de profiter au maximum de ce moment avec vous tous."
+msgstr "Merci de noter que nous souhaitons organiser un mariage sans enfant, hormis pour la famille, afin de profiter au maximum de ce moment avec vous!"
 
 #: src/pages/RsvpForm.tsx:160
 msgid "rsvp_peoples_section_title"

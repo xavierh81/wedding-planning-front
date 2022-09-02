@@ -44,11 +44,11 @@ msgstr "Yes"
 
 #: src/pages/Home.tsx:42
 msgid "homepage_rsvp_button"
-msgstr "Register"
+msgstr "RSVP"
 
 #: src/pages/Home.tsx:40
 msgid "homepage_rsvp_desc"
-msgstr "Please confirm your presence (or not) by clicking on the button below."
+msgstr "Please confirm your presence (or not) by clicking on the button below:"
 
 #: src/pages/Home.tsx:39
 msgid "homepage_rsvp_title"
@@ -72,7 +72,7 @@ msgstr "RSVP"
 
 #: src/components/layouts/MainLayout.tsx:72
 msgid "menu_things_to_do"
-msgstr "Things to Do"
+msgstr "Tourism"
 
 #: src/pages/errors/PageNotFound.tsx:39
 msgid "page_not_found_back_to_home"
@@ -156,7 +156,7 @@ msgstr "Any comments?"
 
 #: src/pages/RsvpForm.tsx:189
 msgid "rsvp_people_coming_question"
-msgstr "Will this person attend to the wedding?"
+msgstr "Will this person attend the wedding?"
 
 #: src/pages/RsvpForm.tsx:219
 msgid "rsvp_people_special_diet_placeholder"
@@ -172,7 +172,7 @@ msgstr "Add guest"
 
 #: src/pages/RsvpForm.tsx:161
 msgid "rsvp_peoples_section_desc"
-msgstr "Please note that we would like to organize a wedding without children, except for family, in order to fully enjoy the moment."
+msgstr "Please note that we would like to organize a wedding without children, except for family, in order to fully enjoy the moment!"
 
 #: src/pages/RsvpForm.tsx:160
 msgid "rsvp_peoples_section_title"
