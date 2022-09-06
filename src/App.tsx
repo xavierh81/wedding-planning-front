@@ -7,7 +7,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from 'pages/Home'
 import RsvpForm from 'pages/RsvpForm'
 import ThingsToDo from 'pages/ThingsToDo';
-import GuestAccomodations from 'pages/GuestAccomodations';
+import GuestAccommodations from 'pages/GuestAccommodations';
 import QuestionsAnswers from 'pages/QuestionsAnswers';
 import PageNotFound from 'pages/errors/PageNotFound';
 
@@ -32,7 +32,7 @@ function App() {
         <Route path={SiteRoutes.HOME} element={<Home />} />
         <Route path={SiteRoutes.RSVP_FORM} element={<RsvpForm />} />
         <Route path={SiteRoutes.QA} element={<QuestionsAnswers />} />
-        <Route path={SiteRoutes.GUEST_ACCOMODATIONS} element={<GuestAccomodations />} />
+        <Route path={SiteRoutes.GUEST_ACCOMMODATIONS} element={<GuestAccommodations />} />
         <Route path={SiteRoutes.THINGS_TO_DO} element={<ThingsToDo />} />
 
         <Route path="*" element={<PageNotFound />} />

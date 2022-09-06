@@ -27,33 +27,33 @@ function QuestionsAnswers() {
     //
     return (
         <MainLayout>
-            <Row className="mainFormTheme">
+            <Row className="mainTheme">
                 <Col {...DEFAULT_SMALL_GRID}>
-                    <div className="formSection">
+                    <div className="section">
                         <span className="title">{t`qa_entry_1_question`}</span>
                         <span className="desc">{t`qa_entry_1_answer`}</span>
                     </div>
-                    <div className="formSection">
+                    <div className="section">
                         <span className="title">{t`qa_entry_2_question`}</span>
                         <span className="desc">{t`qa_entry_2_answer`}</span>
                     </div>
-                    <div className="formSection">
+                    <div className="section">
                         <span className="title">{t`qa_entry_3_question`}</span>
                         <span className="desc">{t({id: "qa_entry_3_answer", values:{date: moment(config.weddingSettings.rsvpDeadline, "YYYY-MM-DD").format("LL")}})}</span>
                     </div>
-                    <div className="formSection">
+                    <div className="section">
                         <span className="title">{t`qa_entry_4_question`}</span>
                         <span className="desc">{t`qa_entry_4_answer`}</span>
                     </div>
-                    <div className="formSection">
+                    <div className="section">
                         <span className="title">{t`qa_entry_5_question`}</span>
                         <span className="desc">{t`qa_entry_5_answer`}</span>
                     </div>
-                    <div className="formSection">
+                    <div className="section">
                         <span className="title">{t`qa_entry_6_question`}</span>
                         <span className="desc">{t`qa_entry_6_answer`}</span>
                     </div>
-                    <div className="formSection">
+                    <div className="section">
                         <span className="title">{t`qa_entry_7_question`}</span>
                         <span className="desc">{t`qa_entry_7_answer`}</span>
                     </div>

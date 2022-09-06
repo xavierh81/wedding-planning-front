@@ -13,24 +13,23 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/GuestAccomodations.tsx:26
 #: src/pages/ThingsToDo.tsx:26
 msgid "coming_soon"
 msgstr "Détails bientôt disponibles !"
 
-#: src/pages/RsvpForm.tsx:248
+#: src/pages/RsvpForm.tsx:251
 msgid "global_form_field_address_placeholder"
 msgstr "Votre adresse"
 
-#: src/pages/RsvpForm.tsx:176
+#: src/pages/RsvpForm.tsx:179
 msgid "global_form_field_firstname_placeholder"
 msgstr "Prénom"
 
-#: src/pages/RsvpForm.tsx:180
+#: src/pages/RsvpForm.tsx:183
 msgid "global_form_field_lastname_placeholder"
 msgstr "Nom"
 
-#: src/pages/RsvpForm.tsx:239
+#: src/pages/RsvpForm.tsx:242
 msgid "global_form_field_mail_placeholder"
 msgstr "Votre adresse mail"
 
@@ -41,6 +40,26 @@ msgstr "Non"
 #: src/components/form/YesNoSwitch.tsx:30
 msgid "global_yes"
 msgstr "Oui"
+
+#: src/pages/GuestAccommodations.tsx:66
+msgid "guest_accommodations_additional_places"
+msgstr "Vous trouverez une liste plus complète sur <0>le document suivant</0>."
+
+#: src/components/GuestAccommodationListItem.tsx:52
+msgid "guest_accommodations_capacity_count"
+msgstr "{value, plural, =0 {Personne} one {Une personne} other {# personnes}}"
+
+#: src/components/GuestAccommodationListItem.tsx:58
+msgid "guest_accommodations_rooms_count"
+msgstr "{value, plural, =0 {Aucune chambre} one {Une chambre} other {# chambres}}"
+
+#: src/pages/GuestAccommodations.tsx:63
+msgid "guest_accommodations_top_desc"
+msgstr "Cette liste de chambres d'hôtes n'est pas exhaustive et ne présente que les lieux les plus proches de la réception."
+
+#: src/pages/GuestAccommodations.tsx:62
+msgid "guest_accommodations_top_title"
+msgstr "Chambres d'hôtes"
 
 #: src/pages/Home.tsx:42
 msgid "homepage_rsvp_button"
@@ -55,7 +74,7 @@ msgid "homepage_rsvp_title"
 msgstr "Serez-vous présents?"
 
 #: src/components/layouts/MainLayout.tsx:71
-msgid "menu_guest_accomodations"
+msgid "menu_guest_accommodations"
 msgstr "Chambres d'hôtes"
 
 #: src/components/layouts/MainLayout.tsx:68
@@ -142,47 +161,47 @@ msgstr "Aéroport de Toulouse–Blagnac (TLS)"
 msgid "qa_entry_7_question"
 msgstr "Quel est l'aéroport le plus proche?"
 
-#: src/pages/RsvpForm.tsx:233
+#: src/pages/RsvpForm.tsx:236
 msgid "rsvp_contact_info_title"
 msgstr "Informations de contact"
 
-#: src/pages/RsvpForm.tsx:278
+#: src/pages/RsvpForm.tsx:281
 msgid "rsvp_form_submit"
 msgstr "Envoyer"
 
-#: src/pages/RsvpForm.tsx:262
+#: src/pages/RsvpForm.tsx:265
 msgid "rsvp_notes_title"
 msgstr "Un commentaire?"
 
-#: src/pages/RsvpForm.tsx:189
+#: src/pages/RsvpForm.tsx:192
 msgid "rsvp_people_coming_question"
 msgstr "Est-ce que cette personne vient au mariage?"
 
-#: src/pages/RsvpForm.tsx:219
+#: src/pages/RsvpForm.tsx:222
 msgid "rsvp_people_special_diet_placeholder"
 msgstr "Vegan, végétarien, allergies, etc."
 
-#: src/pages/RsvpForm.tsx:202
+#: src/pages/RsvpForm.tsx:205
 msgid "rsvp_people_special_diet_question"
 msgstr "Avez-vous un régime alimentaire particulier?"
 
-#: src/pages/RsvpForm.tsx:229
+#: src/pages/RsvpForm.tsx:232
 msgid "rsvp_peoples_add_button"
 msgstr "Ajouter une personne"
 
-#: src/pages/RsvpForm.tsx:161
+#: src/pages/RsvpForm.tsx:164
 msgid "rsvp_peoples_section_desc"
 msgstr "Merci de noter que nous souhaitons organiser un mariage sans enfant, hormis pour la famille, afin de profiter au maximum de ce moment avec vous!"
 
-#: src/pages/RsvpForm.tsx:160
+#: src/pages/RsvpForm.tsx:163
 msgid "rsvp_peoples_section_title"
 msgstr "Indiquez les membres de votre famille"
 
-#: src/pages/RsvpForm.tsx:292
+#: src/pages/RsvpForm.tsx:295
 msgid "rsvp_request_sent_desc"
 msgstr "Nous vous contacterons prochainement avec de nouvelles informations sur notre mariage."
 
-#: src/pages/RsvpForm.tsx:291
+#: src/pages/RsvpForm.tsx:294
 msgid "rsvp_request_sent_title"
 msgstr "Merci pour votre réponse !"
 
@@ -199,14 +218,14 @@ msgstr "Créé par nous-mêmes :)"
 msgid "wedding_detais_days_counter"
 msgstr "{0, plural, =0 {C'est aujourd'hui !} one {C'est demain!} other {# jours avant le mariage!}}"
 
-#: src/pages/RsvpForm.tsx:169
+#: src/pages/RsvpForm.tsx:172
 msgid "wedding_person_kind_1"
 msgstr "Adulte"
 
-#: src/pages/RsvpForm.tsx:170
+#: src/pages/RsvpForm.tsx:173
 msgid "wedding_person_kind_2"
 msgstr "Enfant"
 
-#: src/pages/RsvpForm.tsx:171
+#: src/pages/RsvpForm.tsx:174
 msgid "wedding_person_kind_3"
 msgstr "Bébé (0-2 ans)"

@@ -2,7 +2,7 @@ export const SiteRoutes = {
     HOME: "/",
     RSVP_FORM: "/rsvp",
     QA: "/q-a",
-    GUEST_ACCOMODATIONS: "/guest-accomodations",
+    GUEST_ACCOMMODATIONS: "/guest-accommodations",
     THINGS_TO_DO: "/turism"
 }
 

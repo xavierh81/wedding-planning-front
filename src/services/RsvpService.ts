@@ -26,8 +26,6 @@ export const createRsvpRequest = async (data: any) : Promise<any> => {
             .catch(() => {
                 reject("unknown error")
             })
-
-            resolve(true);
         })
     })
 }

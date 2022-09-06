@@ -68,7 +68,7 @@ const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title}
     menuItems.push({label: t`menu_homepage`, key: 'home', path: SiteRoutes.HOME})
     menuItems.push({label: t`menu_rsvp`, key: 'rsvp', path: SiteRoutes.RSVP_FORM})
     menuItems.push({label: t`menu_questions_answers`, key: 'questions_answers', path: SiteRoutes.QA})
-    menuItems.push({label: t`menu_guest_accomodations`, key: 'guest_accomodations', path: SiteRoutes.GUEST_ACCOMODATIONS})
+    menuItems.push({label: t`menu_guest_accommodations`, key: 'guest_accommodations', path: SiteRoutes.GUEST_ACCOMMODATIONS})
     menuItems.push({label: t`menu_things_to_do`, key: 'things_to_do', path: SiteRoutes.THINGS_TO_DO})
 
     return menuItems;
@@ -86,8 +86,8 @@ const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title}
       case SiteRoutes.QA:
         return "questions_answers";
 
-      case SiteRoutes.GUEST_ACCOMODATIONS:
-        return "guest_accomodations";
+      case SiteRoutes.GUEST_ACCOMMODATIONS:
+        return "guest_accommodations";
 
       case SiteRoutes.THINGS_TO_DO:
         return "things_to_do";

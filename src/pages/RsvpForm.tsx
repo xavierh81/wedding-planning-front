@@ -150,7 +150,7 @@ function RsvpForm() {
     //
     return (
         <MainLayout>
-            <Row className="mainFormTheme">
+            <Row className="mainTheme">
                 <Col {...DEFAULT_SMALL_GRID}>
                     {state.formSuccess === false && 
                         <Form
@@ -159,7 +159,7 @@ function RsvpForm() {
                             className="formContent"
                             onFinish={onFormSubmit}
                         >
-                            <div className="formSection">
+                            <div className="section">
                                 <span className="title">{t`rsvp_peoples_section_title`}</span>
                                 <span className="desc">{t`rsvp_peoples_section_desc`}</span>
 
@@ -232,7 +232,7 @@ function RsvpForm() {
                                 <button type="button" className="actionButton" style={{marginTop:20, marginBottom:20}} onClick={() => addNewPerson()}><PlusCircleOutlined /> {t`rsvp_peoples_add_button`}</button>
                             </div>
 
-                            <div className="formSection">
+                            <div className="section">
                                 <span className="title">{t`rsvp_contact_info_title`}</span>
 
                                 <Row>
@@ -261,7 +261,7 @@ function RsvpForm() {
                                 </Row>
                             </div>
 
-                            <div className="formSection">
+                            <div className="section">
                                 <span className="title">{t`rsvp_notes_title`}</span>
 
                                 <Row>
@@ -284,7 +284,7 @@ function RsvpForm() {
                     }
 
                     {state.formSuccess === true && 
-                        <div className="formSection" style={{marginTop:-50}}>
+                        <div className="section" style={{marginTop:-50}}>
                             <Player
                                 autoplay
                                 loop
