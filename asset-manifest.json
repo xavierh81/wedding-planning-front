@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1bf8cde.css",
-    "main.js": "/static/js/main.2baea16f.js",
+    "main.css": "/static/css/main.4b4dd10b.css",
+    "main.js": "/static/js/main.589d5a41.js",
     "static/media/CormorantGaramond-SemiBold.ttf": "/static/media/CormorantGaramond-SemiBold.e430c89c4919f5a934c0.ttf",
     "static/media/CormorantGaramond-Light.ttf": "/static/media/CormorantGaramond-Light.34c5347fb039025e9576.ttf",
     "static/media/CormorantGaramond-Medium.ttf": "/static/media/CormorantGaramond-Medium.803dcd75c1a47e264b79.ttf",
@@ -21,12 +21,15 @@
     "static/media/MrsSaintDelafield-Regular.ttf": "/static/media/MrsSaintDelafield-Regular.5bf734a989314fb09a30.ttf",
     "static/media/Lato-LightItalic.ttf": "/static/media/Lato-LightItalic.d04e35ca3e0782895d4a.ttf",
     "static/media/Lato-ThinItalic.ttf": "/static/media/Lato-ThinItalic.c47d267d1b0232d5fe9b.ttf",
+    "static/media/distance_icon.svg": "/static/media/distance_icon.4d44a5b4ee7b815732b364db13543caf.svg",
+    "static/media/room_icon.svg": "/static/media/room_icon.25050e05139760ef4e1d25803e4a3be8.svg",
+    "static/media/people_icon.svg": "/static/media/people_icon.e4eb9f173566fcf0171877bab06aca3e.svg",
     "index.html": "/index.html",
-    "main.a1bf8cde.css.map": "/static/css/main.a1bf8cde.css.map",
-    "main.2baea16f.js.map": "/static/js/main.2baea16f.js.map"
+    "main.4b4dd10b.css.map": "/static/css/main.4b4dd10b.css.map",
+    "main.589d5a41.js.map": "/static/js/main.589d5a41.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1bf8cde.css",
-    "static/js/main.2baea16f.js"
+    "static/css/main.4b4dd10b.css",
+    "static/js/main.589d5a41.js"
   ]
 }
