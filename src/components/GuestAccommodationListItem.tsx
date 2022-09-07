@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { t } from '@lingui/macro';
 
 // Ant Design
-import { InfoCircleOutlined, UserOutlined } from '@ant-design/icons';
+import { HomeOutlined, InfoCircleOutlined, LinkOutlined, MailOutlined, PhoneOutlined, UserOutlined } from '@ant-design/icons';
 import { Tooltip } from 'antd';
 
 // Services
@@ -68,6 +68,29 @@ export class GuestAccommodationListItem extends Component<GuestAccommodationList
                                 </div>
                             </Tooltip>
                         }
+                    </div>
+
+                    <div className="inlineDetails">
+                        <LinkOutlined /> <a href={guestAccommodation.link} target="_blank" rel="noreferrer">{t`guest_accommodations_website_link`}</a>
+                    </div>
+                    {guestAccommodation.contact.name && 
+                        <div className="inlineDetails">
+                            <UserOutlined /> {guestAccommodation.contact.name}
+                        </div>
+                    }
+                    {guestAccommodation.contact.phone && 
+                        <div className="inlineDetails">
+                            <PhoneOutlined /> <a href={`tel:${guestAccommodation.contact.phone}`}>{guestAccommodation.contact.phone}</a>
+                        </div>
+                    }
+                    {guestAccommodation.contact.mail && 
+                        <div className="inlineDetails">
+                            <MailOutlined /> <a href={`mailto:${guestAccommodation.contact.mail}`}>{guestAccommodation.contact.mail}</a>
+                        </div>
+                    }
+                    <div className="inlineDetails">
+                        <HomeOutlined />
+                        <span dangerouslySetInnerHTML={{__html: guestAccommodation.address.replace(/\\n/g, "<br />")}}></span>
                     </div>
                 </div>
             </div>

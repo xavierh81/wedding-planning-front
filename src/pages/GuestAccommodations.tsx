@@ -1,6 +1,6 @@
 // Imports
 import React, { useEffect } from 'react';
-import { t, Trans } from '@lingui/macro';
+import { t } from '@lingui/macro';
 
 // Ant Design
 import { Row, Col } from 'antd';
@@ -14,13 +14,8 @@ import { PageLoader } from 'components/PageLoader';
 // APIs
 import { GuestAccommodation, retrieveGuestAccommodations } from 'services/GuestAccommodationsService';
 
-// Helpers
-import { loadConfig } from 'helpers/global';
-
 // Config
 import { DEFAULT_SMALL_GRID } from 'config/constants';
-// Load config
-const config = loadConfig();
 
 //
 // Core
@@ -62,9 +57,7 @@ function GuestAccommodations() {
                         <span className="title">{t`guest_accommodations_top_title`}</span>
                         <span className="desc">{t`guest_accommodations_top_desc`}</span>
 
-                        <span className="desc">
-                            <Trans id="guest_accommodations_additional_places"><a href={config.weddingSettings.guestAccommodationsPDFLink} rel="noreferrer" target="_blank"></a></Trans>
-                        </span>
+                        <span className="desc">{t`guest_accommodations_additional_desc`}</span>
 
                         {state.loading === true && 
                             <PageLoader />

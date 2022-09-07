@@ -10,6 +10,14 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    color:$mainColor;
+
+    &:hover {
+        color:darken($mainColor, $defaultHoverDarkenRatio);
+    }
+}
+
 /* Header */
 header, footer {
     picture.decorationBanner {

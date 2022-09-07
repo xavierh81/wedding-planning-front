@@ -41,9 +41,9 @@ msgstr "Non"
 msgid "global_yes"
 msgstr "Oui"
 
-#: src/pages/GuestAccommodations.tsx:66
-msgid "guest_accommodations_additional_places"
-msgstr "Vous trouverez une liste plus complète sur <0>le document suivant</0>."
+#: src/pages/GuestAccommodations.tsx:65
+msgid "guest_accommodations_additional_desc"
+msgstr "N'hésitez pas à regarder sur Google (ou autre moteur de recherche) pour trouver d'autres hébergements disponibles."
 
 #: src/components/GuestAccommodationListItem.tsx:52
 msgid "guest_accommodations_capacity_count"
@@ -60,6 +60,10 @@ msgstr "Cette liste de chambres d'hôtes n'est pas exhaustive et ne présente qu
 #: src/pages/GuestAccommodations.tsx:62
 msgid "guest_accommodations_top_title"
 msgstr "Chambres d'hôtes"
+
+#: src/components/GuestAccommodationListItem.tsx:74
+msgid "guest_accommodations_website_link"
+msgstr "Site internet"
 
 #: src/pages/Home.tsx:42
 msgid "homepage_rsvp_button"

@@ -41,9 +41,9 @@ msgstr "No"
 msgid "global_yes"
 msgstr "Yes"
 
-#: src/pages/GuestAccommodations.tsx:66
-msgid "guest_accommodations_additional_places"
-msgstr "Vous trouverez une liste plus complète sur <0>le document suivant</0>."
+#: src/pages/GuestAccommodations.tsx:65
+msgid "guest_accommodations_additional_desc"
+msgstr "Do not hesitate to search on Google (or any other search engine) to find another accommodation available."
 
 #: src/components/GuestAccommodationListItem.tsx:52
 msgid "guest_accommodations_capacity_count"
@@ -55,11 +55,15 @@ msgstr "{value, plural, =0 {No room} one {One room} other {# rooms}}"
 
 #: src/pages/GuestAccommodations.tsx:63
 msgid "guest_accommodations_top_desc"
-msgstr "guest_accommodations_top_desc"
+msgstr "This list is not exhaustive and only presents the places closest to the reception."
 
 #: src/pages/GuestAccommodations.tsx:62
 msgid "guest_accommodations_top_title"
-msgstr "guest_accommodations_top_title"
+msgstr "Guest Accommodations"
+
+#: src/components/GuestAccommodationListItem.tsx:74
+msgid "guest_accommodations_website_link"
+msgstr "Website"
 
 #: src/pages/Home.tsx:42
 msgid "homepage_rsvp_button"
