@@ -26,7 +26,8 @@ const config = loadConfig();
 // Define main props types
 type MainLayoutProps = {
   children: ReactNode,
-  title?: string | null
+  title?: string | null,
+  hideHeader? : boolean
 }
 
 type MenuItem = {
@@ -42,7 +43,7 @@ type MainLayoutState = {
     responsiveMenuDisplayed: boolean,
 }
 
-const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title}) => {
+const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title, hideHeader = false}) => {
   // Load hooks
   const navigate = useNavigate();
   const location = useLocation();
@@ -140,31 +141,33 @@ const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title}
   // Main rendering
   return (
     <Layout style={{ minHeight: '100vh' }}>
-      <Header>
-        <Row id="responsiveMenu">
-          <Col xs={24} md={0}>
-            <button className="menuSwitch" onClick={() => switchResponsiveMenuState()}>
-              <MenuOutlined />
-            </button>
-            <span className="siteTitle">V&X</span>
-            {state.responsiveMenuDisplayed &&
-              <Menu className="mainMenu" selectedKeys={[state.currentMenuSelected]} mode="inline" disabledOverflow={true} items={state.menuItems} onClick={(info) => onMenuItemClick(info)} />
-            }
-          </Col>
-        </Row>
-        <DecorationBanner />
-        <div className="weddingDetails">
-          <h1>Valentine & Xavier</h1>
-          <span>{formatWeddingDate()} • {config.weddingSettings.place}</span>
-          <span><Plural id="wedding_detais_days_counter" value={getWeddingDaysCount()} /></span>
-        </div>
+      {hideHeader === false && 
+        <Header>
+          <Row id="responsiveMenu">
+            <Col xs={24} md={0}>
+              <button className="menuSwitch" onClick={() => switchResponsiveMenuState()}>
+                <MenuOutlined />
+              </button>
+              <span className="siteTitle">V&X</span>
+              {state.responsiveMenuDisplayed &&
+                <Menu className="mainMenu" selectedKeys={[state.currentMenuSelected]} mode="inline" disabledOverflow={true} items={state.menuItems} onClick={(info) => onMenuItemClick(info)} />
+              }
+            </Col>
+          </Row>
+          <DecorationBanner />
+          <div className="weddingDetails">
+            <h1>Valentine & Xavier</h1>
+            <span>{formatWeddingDate()} • {config.weddingSettings.place}</span>
+            <span><Plural id="wedding_detais_days_counter" value={getWeddingDaysCount()} /></span>
+          </div>
 
-        <Row>
-          <Col xs={0} md={24}>
-            <Menu className="mainMenu" selectedKeys={[state.currentMenuSelected]} mode="horizontal" items={state.menuItems} onClick={(info) => onMenuItemClick(info)} />
-          </Col>
-        </Row>
-      </Header>
+          <Row>
+            <Col xs={0} md={24}>
+              <Menu className="mainMenu" selectedKeys={[state.currentMenuSelected]} mode="horizontal" items={state.menuItems} onClick={(info) => onMenuItemClick(info)} />
+            </Col>
+          </Row>
+        </Header>
+      }
       <Content>{children}</Content>
       <Footer>
         <div className="weddingDetails">

@@ -12,9 +12,11 @@ const config = {
             url: "https://dg1k71yitl.execute-api.eu-west-3.amazonaws.com/Development",
             endpoints: {
                 rsvpRequest: "/rsvp_request",
+                rsvpResults: "/rsvp_results",
                 retrieveGuestAccommodations: "/guest_accommodations"
             }
-        }
+        },
+        rsvpResultsSecretKey: process.env.REACT_APP_WEDDING_PLANNING_RESULTS_SECRET_KEY
     },
     production: {
         googleMapsApiKey: process.env.REACT_APP_WEDDING_PLANNING_GOOGLE_MAPS_API_KEY,
@@ -28,9 +30,11 @@ const config = {
             url: "https://dg1k71yitl.execute-api.eu-west-3.amazonaws.com/Development",
             endpoints: {
                 rsvpRequest: "/rsvp_request",
+                rsvpResults: "/rsvp_results",
                 retrieveGuestAccommodations: "/guest_accommodations"
             }
-        }
+        },
+        rsvpResultsSecretKey: process.env.REACT_APP_WEDDING_PLANNING_RESULTS_SECRET_KEY
     }
 }
 

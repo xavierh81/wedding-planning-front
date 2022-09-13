@@ -41,7 +41,7 @@ msgstr "No"
 msgid "global_yes"
 msgstr "Yes"
 
-#: src/pages/GuestAccommodations.tsx:65
+#: src/pages/GuestAccommodations.tsx:60
 msgid "guest_accommodations_additional_desc"
 msgstr "Do not hesitate to search on Google (or any other search engine) to find another accommodation available."
 
@@ -53,11 +53,11 @@ msgstr "{value, plural, =0 {Nobody} one {One person} other {# persons}}"
 msgid "guest_accommodations_rooms_count"
 msgstr "{value, plural, =0 {No room} one {One room} other {# rooms}}"
 
-#: src/pages/GuestAccommodations.tsx:63
+#: src/pages/GuestAccommodations.tsx:58
 msgid "guest_accommodations_top_desc"
 msgstr "This list is not exhaustive and only presents the places closest to the reception."
 
-#: src/pages/GuestAccommodations.tsx:62
+#: src/pages/GuestAccommodations.tsx:57
 msgid "guest_accommodations_top_title"
 msgstr "Guest Accommodations"
 
@@ -77,23 +77,23 @@ msgstr "Please confirm your presence (or not) by clicking on the button below:"
 msgid "homepage_rsvp_title"
 msgstr "Are you coming?"
 
-#: src/components/layouts/MainLayout.tsx:71
+#: src/components/layouts/MainLayout.tsx:72
 msgid "menu_guest_accommodations"
 msgstr "Guest Accommodations"
 
-#: src/components/layouts/MainLayout.tsx:68
+#: src/components/layouts/MainLayout.tsx:69
 msgid "menu_homepage"
 msgstr "Home"
 
-#: src/components/layouts/MainLayout.tsx:70
+#: src/components/layouts/MainLayout.tsx:71
 msgid "menu_questions_answers"
 msgstr "Q&A"
 
-#: src/components/layouts/MainLayout.tsx:69
+#: src/components/layouts/MainLayout.tsx:70
 msgid "menu_rsvp"
 msgstr "RSVP"
 
-#: src/components/layouts/MainLayout.tsx:72
+#: src/components/layouts/MainLayout.tsx:73
 msgid "menu_things_to_do"
 msgstr "Tourism"
 
@@ -209,16 +209,68 @@ msgstr "We'll contact you later with more information about the wedding."
 msgid "rsvp_request_sent_title"
 msgstr "Thanks for your answer !"
 
-#: src/components/layouts/MainLayout.tsx:56
-#: src/components/layouts/MainLayout.tsx:59
+#: src/pages/admin/RsvpResults.tsx:81
+msgid "rsvp_results_contact_address"
+msgstr "Address"
+
+#: src/pages/admin/RsvpResults.tsx:76
+msgid "rsvp_results_contact_mail"
+msgstr "Mail"
+
+#: src/pages/admin/RsvpResults.tsx:193
+msgid "rsvp_results_desc"
+msgstr "Enter the password in order to access the list"
+
+#: src/pages/admin/RsvpResults.tsx:160
+msgid "rsvp_results_nb_adult_coming"
+msgstr "Adults"
+
+#: src/pages/admin/RsvpResults.tsx:170
+msgid "rsvp_results_nb_babies_coming"
+msgstr "Babies"
+
+#: src/pages/admin/RsvpResults.tsx:165
+msgid "rsvp_results_nb_kids_coming"
+msgstr "Kids"
+
+#: src/pages/admin/RsvpResults.tsx:155
+msgid "rsvp_results_nb_people_coming"
+msgstr "Number of persons coming"
+
+#: src/pages/admin/RsvpResults.tsx:110
+msgid "rsvp_results_notes"
+msgstr "Notes"
+
+#: src/pages/admin/RsvpResults.tsx:87
+msgid "rsvp_results_people"
+msgstr "People"
+
+#: src/pages/admin/RsvpResults.tsx:66
+msgid "rsvp_results_request_date"
+msgstr "Date"
+
+#: src/pages/admin/RsvpResults.tsx:203
+msgid "rsvp_results_submit"
+msgstr "See the list"
+
+#: src/pages/admin/RsvpResults.tsx:153
+msgid "rsvp_results_summary_title"
+msgstr "Results"
+
+#: src/pages/admin/RsvpResults.tsx:192
+msgid "rsvp_results_title"
+msgstr "RSVP Results"
+
+#: src/components/layouts/MainLayout.tsx:57
+#: src/components/layouts/MainLayout.tsx:60
 msgid "site_title"
 msgstr "Valentine & Xavier's Wedding Website"
 
-#: src/components/layouts/MainLayout.tsx:173
+#: src/components/layouts/MainLayout.tsx:176
 msgid "wedding_details_created_by"
 msgstr "Created by ourselves :)"
 
-#: src/components/layouts/MainLayout.tsx:159
+#: src/components/layouts/MainLayout.tsx:161
 msgid "wedding_detais_days_counter"
 msgstr "{0, plural, =0 {It's today !} one {It's tommorow!} other {# days to go!}}"
 

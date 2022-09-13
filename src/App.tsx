@@ -9,6 +9,7 @@ import RsvpForm from 'pages/RsvpForm'
 import ThingsToDo from 'pages/ThingsToDo';
 import GuestAccommodations from 'pages/GuestAccommodations';
 import QuestionsAnswers from 'pages/QuestionsAnswers';
+import RsvpResults from 'pages/admin/RsvpResults';
 import PageNotFound from 'pages/errors/PageNotFound';
 
 // Config
@@ -34,6 +35,8 @@ function App() {
         <Route path={SiteRoutes.QA} element={<QuestionsAnswers />} />
         <Route path={SiteRoutes.GUEST_ACCOMMODATIONS} element={<GuestAccommodations />} />
         <Route path={SiteRoutes.THINGS_TO_DO} element={<ThingsToDo />} />
+
+        <Route path={SiteRoutes.RSVP_RESULTS} element={<RsvpResults />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
