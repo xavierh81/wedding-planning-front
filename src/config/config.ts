@@ -13,7 +13,8 @@ const config = {
             endpoints: {
                 rsvpRequest: "/rsvp_request",
                 rsvpResults: "/rsvp_results",
-                retrieveGuestAccommodations: "/guest_accommodations"
+                retrieveGuestAccommodations: "/guest_accommodations",
+                retrievePois: "/pois"
             }
         },
         rsvpResultsSecretKey: process.env.REACT_APP_WEDDING_PLANNING_RESULTS_SECRET_KEY
@@ -31,7 +32,8 @@ const config = {
             endpoints: {
                 rsvpRequest: "/rsvp_request",
                 rsvpResults: "/rsvp_results",
-                retrieveGuestAccommodations: "/guest_accommodations"
+                retrieveGuestAccommodations: "/guest_accommodations",
+                retrievePois: "/pois"
             }
         },
         rsvpResultsSecretKey: process.env.REACT_APP_WEDDING_PLANNING_RESULTS_SECRET_KEY

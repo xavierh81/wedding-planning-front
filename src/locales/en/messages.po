@@ -13,10 +13,6 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/ThingsToDo.tsx:26
-msgid "coming_soon"
-msgstr "Details coming soon !"
-
 #: src/pages/RsvpForm.tsx:251
 msgid "global_form_field_address_placeholder"
 msgstr "Your address"
@@ -265,6 +261,14 @@ msgstr "RSVP Results"
 #: src/components/layouts/MainLayout.tsx:60
 msgid "site_title"
 msgstr "Valentine & Xavier's Wedding Website"
+
+#: src/pages/ThingsToDo.tsx:58
+msgid "thingstodo_top_desc"
+msgstr "Here is a non-exhaustive list of places to see in the region."
+
+#: src/pages/ThingsToDo.tsx:57
+msgid "thingstodo_top_title"
+msgstr "Tourism"
 
 #: src/components/layouts/MainLayout.tsx:176
 msgid "wedding_details_created_by"
