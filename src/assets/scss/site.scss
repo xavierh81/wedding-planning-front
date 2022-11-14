@@ -136,6 +136,8 @@ footer {
         margin:50px auto 80px;
         width:180px;
         text-align:center;
+        position:relative;
+        z-index:100;
 
         span.initials {
             font-family: "Mrs Saint Delafield";

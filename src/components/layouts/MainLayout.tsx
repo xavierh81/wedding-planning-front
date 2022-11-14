@@ -171,9 +171,9 @@ const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title,
       <Content>{children}</Content>
       <Footer>
         <div className="weddingDetails">
-          <span className="initials">V&X</span>
+          <span className="initials" onClick={() => alert("test")}>V&X</span>
           <span className="date">{formatWeddingDate("DD.MM.YYYY")}</span>
-          <span className="copyright">{t`wedding_details_created_by`}</span>
+          <span className="copyright" onClick={() => navigate(SiteRoutes.RSVP_RESULTS)}>{t`wedding_details_created_by`}</span>
         </div>
         <DecorationBanner reverse={true} />
       </Footer>
@@ -181,4 +181,4 @@ const MainLayout : React.FunctionComponent<MainLayoutProps> = ({children, title,
   )
 }
 
-export default MainLayout
+export default MainLayout;
