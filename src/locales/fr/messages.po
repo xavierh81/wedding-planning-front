@@ -61,6 +61,70 @@ msgstr "Chambres d'hôtes"
 msgid "guest_accommodations_website_link"
 msgstr "Site internet"
 
+#: src/pages/Home.tsx:52
+msgid "homepage_planning_item_1_additional_desc"
+msgstr "Dans la cave templière du château"
+
+#: src/pages/Home.tsx:51
+msgid "homepage_planning_item_1_desc"
+msgstr "Cérémonie laïque"
+
+#: src/pages/Home.tsx:50
+msgid "homepage_planning_item_1_hour"
+msgstr "15:00"
+
+#: src/pages/Home.tsx:56
+msgid "homepage_planning_item_2_desc"
+msgstr "Temps libre (rafraîchissement, photos)"
+
+#: src/pages/Home.tsx:55
+msgid "homepage_planning_item_2_hour"
+msgstr "16:30"
+
+#: src/pages/Home.tsx:60
+msgid "homepage_planning_item_3_desc"
+msgstr "Vin d'honneur"
+
+#: src/pages/Home.tsx:59
+msgid "homepage_planning_item_3_hour"
+msgstr "18:00"
+
+#: src/pages/Home.tsx:64
+msgid "homepage_planning_item_4_desc"
+msgstr "À table !"
+
+#: src/pages/Home.tsx:63
+msgid "homepage_planning_item_4_hour"
+msgstr "20:00"
+
+#: src/pages/Home.tsx:68
+msgid "homepage_planning_item_5_desc"
+msgstr "Rendez-vous sur le Dancefloor !"
+
+#: src/pages/Home.tsx:67
+msgid "homepage_planning_item_5_hour"
+msgstr "00:00"
+
+#: src/pages/Home.tsx:72
+msgid "homepage_planning_item_6_desc"
+msgstr "Fin de soirée"
+
+#: src/pages/Home.tsx:71
+msgid "homepage_planning_item_6_hour"
+msgstr "05:00"
+
+#: src/pages/Home.tsx:76
+msgid "homepage_planning_item_7_desc"
+msgstr "Prolongeons le plaisir avec un petit-déjeuner et un brunch"
+
+#: src/pages/Home.tsx:75
+msgid "homepage_planning_item_7_hour"
+msgstr "Dimanche 2 Juillet"
+
+#: src/pages/Home.tsx:46
+msgid "homepage_planning_title"
+msgstr "Organisation de la journée"
+
 #: src/pages/Home.tsx:42
 msgid "homepage_rsvp_button"
 msgstr "Répondre à l'invitation"

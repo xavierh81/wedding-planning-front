@@ -1,65 +1,127 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2022-08-29 12:03+0200\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: @lingui/cli\n"
-"Language: en\n"
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
+"Language: \n"
 "Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
 #: src/pages/RsvpForm.tsx:251
 msgid "global_form_field_address_placeholder"
-msgstr "Your address"
+msgstr "global_form_field_address_placeholder"
 
 #: src/pages/RsvpForm.tsx:179
 msgid "global_form_field_firstname_placeholder"
-msgstr "First name"
+msgstr "global_form_field_firstname_placeholder"
 
 #: src/pages/RsvpForm.tsx:183
 msgid "global_form_field_lastname_placeholder"
-msgstr "Last name"
+msgstr "global_form_field_lastname_placeholder"
 
 #: src/pages/RsvpForm.tsx:242
 msgid "global_form_field_mail_placeholder"
-msgstr "Your email address"
+msgstr "global_form_field_mail_placeholder"
 
 #: src/components/form/YesNoSwitch.tsx:31
 msgid "global_no"
-msgstr "No"
+msgstr "global_no"
 
 #: src/components/form/YesNoSwitch.tsx:30
 msgid "global_yes"
-msgstr "Yes"
+msgstr "global_yes"
 
 #: src/pages/GuestAccommodations.tsx:60
 msgid "guest_accommodations_additional_desc"
-msgstr "Do not hesitate to search on Google (or any other search engine) to find another accommodation available."
+msgstr "guest_accommodations_additional_desc"
 
 #: src/components/GuestAccommodationListItem.tsx:52
 msgid "guest_accommodations_capacity_count"
-msgstr "{value, plural, =0 {Nobody} one {One person} other {# persons}}"
+msgstr "guest_accommodations_capacity_count"
 
 #: src/components/GuestAccommodationListItem.tsx:58
 msgid "guest_accommodations_rooms_count"
-msgstr "{value, plural, =0 {No room} one {One room} other {# rooms}}"
+msgstr "guest_accommodations_rooms_count"
 
 #: src/pages/GuestAccommodations.tsx:58
 msgid "guest_accommodations_top_desc"
-msgstr "This list is not exhaustive and only presents the places closest to the reception."
+msgstr "guest_accommodations_top_desc"
 
 #: src/pages/GuestAccommodations.tsx:57
 msgid "guest_accommodations_top_title"
-msgstr "Guest Accommodations"
+msgstr "guest_accommodations_top_title"
 
 #: src/components/GuestAccommodationListItem.tsx:74
 msgid "guest_accommodations_website_link"
-msgstr "Website"
+msgstr "guest_accommodations_website_link"
+
+#: src/pages/Home.tsx:52
+msgid "homepage_planning_item_1_additional_desc"
+msgstr "In the Templar cave of the castle"
+
+#: src/pages/Home.tsx:51
+msgid "homepage_planning_item_1_desc"
+msgstr "Ceremony"
+
+#: src/pages/Home.tsx:50
+msgid "homepage_planning_item_1_hour"
+msgstr "15:00"
+
+#: src/pages/Home.tsx:56
+msgid "homepage_planning_item_2_desc"
+msgstr "Free time (refreshment, pictures)"
+
+#: src/pages/Home.tsx:55
+msgid "homepage_planning_item_2_hour"
+msgstr "16:30"
+
+#: src/pages/Home.tsx:60
+msgid "homepage_planning_item_3_desc"
+msgstr "Cocktail"
+
+#: src/pages/Home.tsx:59
+msgid "homepage_planning_item_3_hour"
+msgstr "18:00"
+
+#: src/pages/Home.tsx:64
+msgid "homepage_planning_item_4_desc"
+msgstr "Dinner"
+
+#: src/pages/Home.tsx:63
+msgid "homepage_planning_item_4_hour"
+msgstr "20:00"
+
+#: src/pages/Home.tsx:68
+msgid "homepage_planning_item_5_desc"
+msgstr "Let's dance !"
+
+#: src/pages/Home.tsx:67
+msgid "homepage_planning_item_5_hour"
+msgstr "00:00"
+
+#: src/pages/Home.tsx:72
+msgid "homepage_planning_item_6_desc"
+msgstr "The End"
+
+#: src/pages/Home.tsx:71
+msgid "homepage_planning_item_6_hour"
+msgstr "05:00"
+
+#: src/pages/Home.tsx:76
+msgid "homepage_planning_item_7_desc"
+msgstr "Let's spend more time all together with a breakfast and a brunch"
+
+#: src/pages/Home.tsx:75
+msgid "homepage_planning_item_7_hour"
+msgstr "Sunday, July 2"
+
+#: src/pages/Home.tsx:46
+msgid "homepage_planning_title"
+msgstr "Wedding Planning"
 
 #: src/pages/Home.tsx:42
 msgid "homepage_rsvp_button"
